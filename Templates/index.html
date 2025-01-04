@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Archives By Ankita Chaudhari</title>
+    <!-- Meta tags for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- CSS styles -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #e6ccb3;
+            padding: 50px 0;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        nav {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin: 0 20px;
+            color: #6C63FF;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .headlineforcontact {
+            color: red;
+
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+        }
+        .section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .section h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #6C63FF;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: #fff;
+            width: 30%;
+            margin: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+        .project-card h3 {
+            margin: 15px;
+            font-size: 24px;
+        }
+        .project-card p {
+            margin: 0 15px 15px;
+            font-size: 16px;
+            color: #666;
+        }
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #6C63FF;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer {
+            background-color: #e6ccb3;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        @media (max-width: 992px) {
+            .project-card {
+                width: 45%;
+            }
+        }
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Art Archives</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#projects">Gifting Items</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="section about" id="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio! My name is Ankita Chaudhari and I’ve been
+                passionately immersed in the world of handcrafted art for over 6+ years.
+                My creative journey began with paper crafts and homemade chocolates
+                and has since expanded into a diverse range of mediums, including resin art,
+                canvas painting, mandala designs, clay creations, and watercolor
+                masterpieces. <br>
+
+                Each piece I create is a labor of love, reflecting a personalized touch that
+                captures every emotion and moment. I specialize in resin jewelry, where I
+                blend intricate designs with personal significance, as well as in flower
+                preservation, turning cherished blooms into lasting memories. <br>
+
+                My approach to crafting is deeply rooted in customization. Whether it’s for a
+                special occasion, a unique gift, or a personal treat, I strive to bring your vision
+                to life with meticulous attention to detail and a heartfelt connection to
+                each project. <br>
+
+                In addition to creating, I love sharing my passion through workshops, where
+                I guide others in discovering the joy of handcrafting. 
+            </p>
+        </section>
+
+        <section class="section projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3 class="ItemNumber">Project One</h3>
+                    <p>An exciting project that showcases my skills in frontend development.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3 class="ItemNumber">Project Two</h3>
+                    <p>A web application developed using the latest backend technologies.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3 class="ItemNumber">Project Three</h3>
+                    <p>A mobile-responsive website designed with user experience in mind.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                <h3 class="headlineforcontact">Let's Gift Together</h3>
+                Thank you for visiting my portfolio ! <br>
+
+                I hope you find something that resonates with you and reflects
+                the beauty and emotion that handcrafted art can offer.  <br>
+                
+                Feel free to reach out!
+            </p>
+            <p>Instagram: <a href="https://www.instagram.com/artarchives.ac?igsh=MjVmOHM0aTNnMTRt">@artarchives.ac</a>
+            <p>Email: <a href="mailto:wishinguponagift10@gmail.com">wishinguponagift10@gmail.com</a></p>
+            <p>Canva: <a href="https://wishinguponagift10.my.canva.site/artarchivesac">Art Archives Portfolio | Canva</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Art Archives</p>
+    </footer>
+
+</body>
+</html>
